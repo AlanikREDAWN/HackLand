@@ -3,6 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+image bg alaska = "alaska.jpg"
+image bg antarctica = "antarctica.jpg"
+image bg amazon = "amazon.jpg"
+
 define e = Character("Eileen")
 
 define zrl = Character("Zach Latta", color="#C5DCA0")
@@ -53,6 +57,11 @@ transform half_size:
 transform quarter_size:
     zoom 0.25
 
+transform third_size:
+    zoom 0.75
+
+transform alaska_size:
+    zoom 1.32
 
 
 # The game starts here.
@@ -96,7 +105,7 @@ label start:
         "Alaska":
             jump alaska
         "Antartica":
-            jump antartica
+            jump antarctica
         "The Amazon":
             jump amazon
 
@@ -108,7 +117,7 @@ label alaska:
 
     $ renpy.movie_cutscene("planeCutscene.webm")
 
-    scene bg alaska # see task list
+    scene bg alaska at alaska_size, center # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
 
@@ -158,14 +167,14 @@ label airplaneAlaska:
 
 
 
-label antartica:
-    m "I have chosen Antartica to create a Hack Land"
+label antarctica:
+    m "I have chosen Antarctica to create a Hack Land"
 
-    "You get on a plane and fly to Antartica."
+    "You get on a plane and fly to Antarctica."
 
     $ renpy.movie_cutscene("planeCutscene.webm")
 
-    scene bg antartica # see task list
+    scene bg antarctica # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
 
@@ -180,36 +189,37 @@ label antartica:
         "Which flag does the group choose?"
 
         "Blahaj Flag":
-            jump blahajAntartica
+            jump blahajAntarctica
         "Cat Flag":
-            jump catAntartica
+            jump catAntarctica
         "Paper Airplane Flag":
-            jump airplaneAntartica
+            jump airplaneAntarctica
 
-label blahajAntartica:
+label blahajAntarctica:
     "The group decides on the Blahaj flag. The flag is raised up into the air"
 
-    $ renpy.movie_cutscene("blahajAntartica.webm") # see task list
+    $ renpy.movie_cutscene("blahajAntarctica.webm") # see task list
 
-    show blahajAntartica at right
+    show blahajAntarctica at right
 
     "Everyone cheers!!"
 
-label catAntartica:
+
+label catAntarctica:
     "The group decides on the cat flag. The flag is raised into the air"
 
-    $ renpy.movie_cutscene("catAntartica.webm") # see task list
+    $ renpy.movie_cutscene("catAntarctica.webm") # see task list
 
-    show catAntartica at right
+    show catAntarctica at right
 
     "Everyone cheers!!"
 
-label airplaneAntartica:
+label airplaneAntarctica:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
-    $ renpy.movie_cutscene("airplaneAntartica.webm") # see task list
+    $ renpy.movie_cutscene("airplaneAntarctica.webm") # see task list
 
-    show airplaneAntartica at right
+    show airplaneAntarctica at right
 
     "Everyone cheers!!"
 
@@ -278,19 +288,19 @@ label airplaneAmazon:
 # todo: 
 # * create blahaj flag
 # * create blahaj alaska flag cutscene
-# * create blahaj antartica flag cutscene
+# * create blahaj antarctica flag cutscene
 # * create blahaj amazon flag cutscene
 
 # * create cat flag
 # * create cat alaska flag cutscene
-# * create cat antartica flag cutscene
+# * create cat antarctica flag cutscene
 # * create cat amazon flag cutscene
 
 # * create paper airplane flag
 # * create paper airplane alaska flag cutscene
-# * create paper airplane antartica flag cutscene
+# * create paper airplane antarctica flag cutscene
 # * create paper airplane amazon flag cutscene
 
 # * create alaska bg
-# * create antartica bg
+# * create antarctica bg
 # * create amazon bg
