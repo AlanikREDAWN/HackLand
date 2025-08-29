@@ -134,15 +134,27 @@ label blahajAlaska:
 
     $ renpy.movie_cutscene("blahajAlaska.webm") # see task list
 
+    show blahajAlaska at right
+
+    "Everyone cheers!!"
+
 label catAlaska:
     "The group decides on the cat flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("catAlaska.webm") # see task list
 
+    show catAlaska at right
+
+    "Everyone cheers!!"
+
 label airplaneAlaska:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAlaska.webm") # see task list
+
+    show airplaneAlaska at right
+
+    "Everyone cheers!!"
 
 
 
@@ -179,15 +191,27 @@ label blahajAntartica:
 
     $ renpy.movie_cutscene("blahajAntartica.webm") # see task list
 
+    show blahajAntartica at right
+
+    "Everyone cheers!!"
+
 label catAntartica:
     "The group decides on the cat flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("catAntartica.webm") # see task list
 
+    show catAntartica at right
+
+    "Everyone cheers!!"
+
 label airplaneAntartica:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAntartica.webm") # see task list
+
+    show airplaneAntartica at right
+
+    "Everyone cheers!!"
 
 
 label amazon:
@@ -223,15 +247,27 @@ label blahajAmazon:
 
     $ renpy.movie_cutscene("blahajAmazon.webm") # see task list
 
+    show blahajAmazon at right
+
+    "Everyone cheers!!"
+
 label catAmazon:
     "The group decides on the cat flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("catAmazon.webm") # see task list
 
+    show catAmazon at right
+
+    "Everyone cheers!!"
+
 label airplaneAmazon:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAmazon.webm") # see task list
+
+    show airplaneAmazon at right
+
+    "Everyone cheers!!"
 
 
 
