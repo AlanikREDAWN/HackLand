@@ -63,6 +63,12 @@ transform third_size:
 transform alaska_size:
     zoom 1.32
 
+transform antarctica_size:
+    zoom 0.77
+
+transform amazon_size:
+    zoom 0.75
+
 
 # The game starts here.
 
@@ -174,7 +180,7 @@ label antarctica:
 
     $ renpy.movie_cutscene("planeCutscene.webm")
 
-    scene bg antarctica # see task list
+    scene bg antarctica at antarctica_size, center # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
 
@@ -231,7 +237,7 @@ label amazon:
 
     $ renpy.movie_cutscene("planeCutscene.webm")
 
-    scene bg amazon # see task list
+    scene bg amazon at amazon_size, center # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
 
@@ -301,6 +307,6 @@ label airplaneAmazon:
 # * create paper airplane antarctica flag cutscene
 # * create paper airplane amazon flag cutscene
 
-# * create alaska bg
-# * create antarctica bg
-# * create amazon bg
+# - create alaska bg
+# - create antarctica bg
+# - create amazon bg
