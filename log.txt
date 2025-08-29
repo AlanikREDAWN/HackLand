@@ -1,26 +1,39 @@
-2025-08-28 17:23:11 UTC
+2025-08-29 12:23:47 UTC
 macOS-15.5-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
-Early init took 28 ms
-Loading error handling took 13 ms
-Loading script took 33 ms
-Loading save slot metadata took 10 ms
-Loading persistent took 0 ms
-Running init code took 18 ms
+Early init took 36 ms
+Loading error handling took 22 ms
+Loading script took 87 ms
+Loading save slot metadata took 19 ms
+Loading persistent took 1 ms
+Running init code took 32 ms
 Loading analysis data took 2 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 1 ms
-Dump and make backups took 22 ms
+Reloading save slot metadata took 4 ms
+Dump and make backups took 27 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 18 ms
+Initial gc took 36 ms
 DPI scale factor: 1.000000
-Creating interface object took 0 ms
+Creating interface object took 1 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 9 ms
+Load screen analysis took 10 ms
 Analyze screens took 0 ms
 Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
 Save bytecode took 0 ms
+Running _start took 0 ms
+Interface start took 387 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1512, 982)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Apple'
+Renderer: 'Apple M1 Pro'
+Version: '2.1 Metal - 89.4'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 4278190080), 'shifts': (16, 8, 0, 24), 'losses': (0, 0, 0, 0), 'current_w': 1512, 'current_h': 982, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1410, 793) drawable=(2820, 1586)
+Maximum texture size: 4096x4096
