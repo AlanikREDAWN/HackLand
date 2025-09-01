@@ -6,6 +6,11 @@
 image bg alaska = "alaska.jpg"
 image bg antarctica = "antarctica.jpg"
 image bg amazon = "amazon.jpg"
+image bg desk = "desk.jpg"
+
+image blahajFlag movie = Movie(play="blahajFlagPoleMask.webm", side_mask=True)
+image catFlag movie = Movie(play="catFlagPoleMask.webm", side_mask=True)
+image airplaneFlag movie = Movie(play="airplaneFlagPoleMask.webm", side_mask=True)
 
 define e = Character("Eileen")
 
@@ -20,6 +25,8 @@ image DanielLialinImage = "game/images/ts/Daniel Lialin.png"
 
 define AileenRivera = Character("Aileen Rivera (@aïleen)")
 image AileenRiveraImage = "game/images/ts/Aileen Rivera.png"
+
+image groupPhoto = "groupPhoto.png"
 
 
 
@@ -69,6 +76,12 @@ transform antarctica_size:
 transform amazon_size:
     zoom 0.75
 
+transform desk_size:
+    zoom 0.35
+
+transform half:
+    alpha 0.75
+
 
 # The game starts here.
 
@@ -79,7 +92,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg desk at desk_size, center
     
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -127,6 +140,8 @@ label alaska:
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
 
+    show groupPhoto at half, center
+
     m "Hello everyone! I can't wait to work with you all to make this happen! I think the first order of buisness is to create our flag."
 
     "You have everyone there nominate three artists to design what they think the Hack Land flag should look like."
@@ -142,34 +157,52 @@ label alaska:
         "Cat Flag":
             jump catAlaska
         "Paper Airplane Flag":
-            jump airplaneFlag
+            jump airplaneAlaska
 
 label blahajAlaska:
     "The group decides on the Blahaj flag. The flag is raised up into the air"
 
     $ renpy.movie_cutscene("blahajAlaska.webm") # see task list
 
-    show blahajAlaska at right
+    show blahajFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 label catAlaska:
     "The group decides on the cat flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("catAlaska.webm") # see task list
 
-    show catAlaska at right
+    show catFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 label airplaneAlaska:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAlaska.webm") # see task list
 
-    show airplaneAlaska at right
+    show airplaneFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 
 
@@ -183,6 +216,8 @@ label antarctica:
     scene bg antarctica at antarctica_size, center # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
+
+    show groupPhoto at half, center
 
     m "Hello everyone! I can't wait to work with you all to make this happen! I think the first order of buisness is to create our flag."
 
@@ -206,9 +241,15 @@ label blahajAntarctica:
 
     $ renpy.movie_cutscene("blahajAntarctica.webm") # see task list
 
-    show blahajAntarctica at right
+    show blahajFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 
 label catAntarctica:
@@ -216,18 +257,30 @@ label catAntarctica:
 
     $ renpy.movie_cutscene("catAntarctica.webm") # see task list
 
-    show catAntarctica at right
+    show catFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+    
+    "The end...for now"
+
+    return
 
 label airplaneAntarctica:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAntarctica.webm") # see task list
 
-    show airplaneAntarctica at right
+    show airplaneFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 
 label amazon:
@@ -240,6 +293,8 @@ label amazon:
     scene bg amazon at amazon_size, center # see task list
 
     "There you are greeted by some of your favorite Hack Clubbers, ready to help you start up Hack Land!"
+
+    show groupPhoto at half, center
 
     m "Hello everyone! I can't wait to work with you all to make this happen! I think the first order of buisness is to create our flag."
 
@@ -263,27 +318,45 @@ label blahajAmazon:
 
     $ renpy.movie_cutscene("blahajAmazon.webm") # see task list
 
-    show blahajAmazon at right
+    show blahajFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 label catAmazon:
     "The group decides on the cat flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("catAmazon.webm") # see task list
 
-    show catAmazon at right
+    show catFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 label airplaneAmazon:
     "The group decides on the paper airplane flag. The flag is raised into the air"
 
     $ renpy.movie_cutscene("airplaneAmazon.webm") # see task list
 
-    show airplaneAmazon at right
+    show airplaneFlag movie at right
+
+    m "Hack Land is offically open!"
 
     "Everyone cheers!!"
+
+    "The end...for now"
+
+    return
 
 
 

@@ -1,21 +1,21 @@
-2025-08-29 17:59:33 UTC
-macOS-15.5-arm64-arm-64bit
+2025-09-01 00:44:25 UTC
+macOS-15.6.1-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
-Early init took 27 ms
-Loading error handling took 26 ms
-Loading script took 116 ms
-Loading save slot metadata took 15 ms
+Early init took 30 ms
+Loading error handling took 15 ms
+Loading script took 140 ms
+Loading save slot metadata took 23 ms
 Loading persistent took 0 ms
-Running init code took 45 ms
-Loading analysis data took 3 ms
+Running init code took 29 ms
+Loading analysis data took 2 ms
 Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 6 ms
+Reloading save slot metadata took 5 ms
 Backing up script files to '/Users/liliadostie/Library/RenPy/backups/Hack Land':
-Dump and make backups took 26 ms
+Dump and make backups took 47 ms
 Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 20 ms
+Making clean stores took 2 ms
+Initial gc took 22 ms
 DPI scale factor: 1.000000
 Creating interface object took 0 ms
 Init translation took 0 ms
@@ -25,8 +25,8 @@ Analyze screens took 5 ms
 Save screen analysis took 7 ms
 Save pyanalysis took 3 ms
 Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 372 ms
+Running _start took 0 ms
+Interface start took 343 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1512, 982)
